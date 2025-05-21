@@ -5,13 +5,19 @@
     box-sizing: border-box;
     font-family: "Poppins";
 }
-:root{
-    --orange :#FD8D5D;
-    --light-orange:#FFD8C7;
-    --black : #3A3A3A;
-    --light-grey:#E0E0E0;
+
+
+:root {
+    --orange: #FD8D5D;
+    --light-orange: #FFD8C7;
+    --black: #3A3A3A;
+    --white: #fff;
+    --light-grey: #E0E0E0;
     --gap: 32px;
+    --font-main: "Poppins", sans-serif;
 }
+
+
 header{
     border-bottom: 1px solid #000;
     padding: 9px 0;
@@ -29,29 +35,17 @@ header{
 
 
 
-.menu{
-    display: block;
-    position: static;
-    a{
-        display: block;
-        font-size: 15px;
-        transition: color 0.3s ease;
-    }
-    ul{
-        display: flex;
-        align-items: center;
-        list-style: none;
-        gap: 36px;
-    }
-}
-.menu a:hover{
-    color: var(--orange);
-}
+
 /*texte*/
 h1{
     font-size: 30px;
 }
 h2{
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+h3{
     font-size: 20px;
     margin-top: 8px;
     margin-bottom: 4px;
@@ -62,6 +56,7 @@ h1,h2,.logo{
 .white {
     color: white;
 }
+
 
 .etiquette{
     font-size: 16px;
@@ -487,12 +482,14 @@ margin: auto;
 }
 
 .logo {
-    width: 100px;
+    width: 150px;
 }
+
+
 
 /* hero section */
 
-.secttionHero{
+.sectionHero{
     height: 100vh;
     position: relative;
 }
@@ -501,6 +498,35 @@ margin: auto;
     height: 100%;
     object-fit: cover;
 }
+.img{
+    backdrop-filter: blur(10px);
+    width: 100%;
+    padding: 10px;
+}
+.pHero{
+     font-size: 3rem;
+}
+
+
+
+.menu{
+    display: block;
+    position: static;
+    a{
+        display: block;
+        font-size: 25px;
+        transition: color 0.3s ease;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 36px;
+    }
+}
+.menu a:hover{
+    color: var(--orange);
+}
 
 .divHero {
     position: absolute;
@@ -508,12 +534,61 @@ margin: auto;
     left:50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    
+    backdrop-filter: blur(6px);
+    background-color: #ffffff91;
 }
+
+
 .divHero > p {
     font-size: 20px;
 }
 
-.img{
-    backdrop-filter: blur(8px);
+
+
+.divHistoir {
+  padding: 2rem;
+  background-color: #fdf6f0; 
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+  margin: 2rem auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.divh2 {
+  font-size: 3rem;
+  color: #006400; 
+  margin-bottom: 1rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.divP {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  line-height: 1.6;
+  font-style: italic;
+}
+.black {
+    color: rgb(11, 11, 11);
+}
+.image{
+    width: 100%;
+ }
+ .contSection{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 16px;
+ }
+.textP{
+  color: green;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+.test{
+    justify-content: center;
 }

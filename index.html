@@ -1,121 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Restaurant Brésilien</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
 </head>
 
 <body>
 
-
-    <!--header-->
-
+    <!-- Header -->
     <header>
-        <nav class="w50">
-            <ul class="flex spaceBetween alignCenter pucesNone">
-                <li><a href="" class="black">Home</a></li>
-                <li><a href="" class="black">Accuil</a></li>
-                <li><a href="" class="black">Reserver</a></li><a href=""></a>
-                <li><a href=""><img src="assets/ogo-bresilien-1.png" alt="logo ogo-bresilien-1" class="logo"></a></li>
-                <li><a href="" class="black">Galerie photo</a></li>
-                <li><a href="" class="black">Commander</a></li>
-                <li><a href="" class="black">Contact</a></li>
+        <nav class="menu container">
+            <ul class="flex justify-between align-center">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Réserver</a></li>
+                <li>
+                    <a href="#"><img src="assets/ogo-bresilien-1.png" alt="Logo restaurant brésilien"
+                            class="logo" /></a>
+                </li>
+                <li><a href="#">Galerie photo</a></li>
+                <li><a href="#">Commander</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-
-    <!-- MAIN-->
-
-
+    <!-- Hero Section -->
     <main>
-
-        <!-- section hero-->
-
         <section class="sectionHero">
-            <img src="assets/banniére plats.jpg" alt="" class="bgHero ">
+            <img src="assets/banniére plats.jpg" alt="Bannière plats brésiliens" class="bgHero img" />
 
-            <div class=" w50 divHero">
-                <img src="assets/ogo-bresilien-1.png" alt="">
-                <h1 class="white">Tudo de Bom</h1>
-                <P class="white">Restaurant Brésilien à Marseille</P>
+            <div class="divHero">
+                <img src="assets/ogo-bresilien-1.png" alt="Logo hero" class="logoHero" />
+                <h1>Tudo de Bom</h1>
+                <p class="pHero">Restaurant Brésilien à Marseille</p>
+            </div>
+        </section>
 
+        <!-- Histoire -->
+        <section class="divHistoire">
+            <h2 class="divh2">Histoire Restaurant Brésilien</h2>
+            <p class="divP container">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at doloribus quis voluptates cumque...
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem odit esse, obcaecati, est
+                aspernatur pariatur facere libero labore unde velit magnam! Quos in voluptate nihil architecto. Libero,
+                voluptatibus. Reprehenderit, laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam accusamus fuga facilis iste nulla, deserunt modi accusantium quos ducimus voluptatum aliquam,
+                tenetur molestiae delectus quis maxime cumque facere! Voluptas, assumenda?
+            </p>
+        </section>
+
+        <!-- Plats Section -->
+        <section class="flex">
+            <div class="flex card large-6 flex gap align-center  contSection">
+                <!-- Partie gauche image -->
+                <img src="assets/IMG 2.jpg" alt="Image plats brésilien" class="large-6 image" />
+
+                <!-- Partie droite texte -->
+                <div>
+                    <h3 class="divh2">Feijoada</h3>
+                    <div class="flex justify-between">
+                        <p class="textP">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, deleniti minus laborum
+                            sequi
+                            cumque nihil necessitatibus. Quae omnis dicta doloremque soluta sapiente voluptate,
+                            explicabo
+                            quas, recusandae veritatis perspiciatis, hic ut.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex card large-6 flex-column gap align-center  contSection">
+                <!-- Partie droite texte -->
+                <div class="large-12 flex gap-12 test">
+                    <h3 class="divh2">Moqueca</h3>
+                    <div class="flex ">
+                        <p class="textP">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, deleniti minus laborum
+                            sequi
+                            cumque nihil necessitatibus. Quae omnis dicta doloremque soluta sapiente voluptate,
+                            explicabo
+                            quas, recusandae veritatis perspiciatis, hic ut.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Partie gauche image -->
+                <img src="assets/img 1.jpg" alt="Image plats brésilien" class="large-12 image" />
+            </div>
+        </section>
+
+        <!--section Services-->
+        <section>
+            <h2>Nos Services</h2>
+
+            <div class="services-container">
+
+                <div class="service">
+                    <h3>Événements Culturels</h3>
+                    <p>
+                        Participez à nos événements culturels pour vivre l'ambiance du Brésil.
+                        Musique live, danse, et dégustation de plats authentiques pour une expérience immersive.
+                    </p>
+                </div>
+
+                <div class="service">
+                    <h3>Cours de Cuisine</h3>
+                    <p>
+                        Apprenez à cuisiner les plats brésiliens avec nos cours de cuisine.
+                        Nos chefs vous guideront à travers les techniques et les saveurs de la cuisine brésilienne.
+                    </p>
+                </div>
+
+                <div class="service">
+                    <h3>Privatisation d'Espace</h3>
+                    <p>
+                        Privatisez un espace pour vos événements spéciaux.
+                        Anniversaires, réunions d'affaires ou célébrations,
+                        nous créons une atmosphère brésilienne pour rendre votre occasion mémorable.
+                    </p>
+                </div>
 
             </div>
         </section>
 
-        <!--div histoire restaurant-->
-
-        <div>
-            <h2>histoire Restaurant Brasilien</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam at doloribus quis voluptates cumque? Doloribus repellendus sunt similique cupiditate iste, iure amet, inventore laudantium tenetur impedit fuga molestias blanditiis ratione?</p>
-        </div>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </main>
 
 </body>
 
