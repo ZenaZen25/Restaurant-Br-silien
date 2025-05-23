@@ -13,7 +13,7 @@
 <body>
 
     <!-- Header -->
-    <header>
+    <header class="hRadius">
         <nav class="menu container">
             <ul class="flex justify-between align-center">
                 <li><a href="#">Home</a></li>
@@ -33,109 +33,129 @@
     <!-- Hero Section -->
     <main>
         <section class="sectionHero">
-            <img src="assets/banniére plats.jpg" alt="Bannière plats brésiliens" class="bgHero img" />
-
+            <img src="assets/RESTO.webp" alt="Bannière plats brésiliens" class="bgHero" />
             <div class="divHero">
-                <img src="assets/ogo-bresilien-1.png" alt="Logo hero" class="logoHero" />
-                <h1>Tudo de Bom</h1>
-                <p class="pHero">Restaurant Brésilien à Marseille</p>
+                <!-- Image ou contenu additionnel ici si nécessaire -->
             </div>
         </section>
 
         <!-- Histoire -->
         <section class="divHistoire">
-            <h2 class="divh2">Histoire Restaurant Brésilien</h2>
+            <h2 class="divh2">Histoire du Restaurant Brésilien</h2>
             <p class="divP container">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at doloribus quis voluptates cumque...
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem odit esse, obcaecati, est
-                aspernatur pariatur facere libero labore unde velit magnam! Quos in voluptate nihil architecto. Libero,
-                voluptatibus. Reprehenderit, laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam accusamus fuga facilis iste nulla, deserunt modi accusantium quos ducimus voluptatum aliquam,
-                tenetur molestiae delectus quis maxime cumque facere! Voluptas, assumenda?
+                Voluptatem odit esse, obcaecati, est aspernatur pariatur facere libero labore unde velit magnam! Quos in
+                voluptate nihil architecto. Libero,
+                voluptatibus. Reprehenderit, laudantium.
             </p>
         </section>
-
-        <!-- Plats Section -->
-        <section class="flex">
-            <div class="flex card large-6 flex gap align-center  contSection">
-                <!-- Partie gauche image -->
-                <img src="assets/IMG 2.jpg" alt="Image plats brésilien" class="large-6 image" />
-
-                <!-- Partie droite texte -->
-                <div>
-                    <h3 class="divh2">Feijoada</h3>
-                    <div class="flex justify-between">
-                        <p class="textP">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, deleniti minus laborum
-                            sequi
-                            cumque nihil necessitatibus. Quae omnis dicta doloremque soluta sapiente voluptate,
-                            explicabo
-                            quas, recusandae veritatis perspiciatis, hic ut.
-                        </p>
-                    </div>
+        <!--Section plats-->
+        <section class="cards-container">
+            <div class="card">
+                <img src="assets/img 1.jpg" alt="Feijoada" />
+                <div class="card-content">
+                    <h3>Feijoada</h3>
+                    <p>Haricots noirs & viandes variées. Plat emblématique brésilien.</p>
                 </div>
             </div>
 
-            <div class="flex card large-6 flex-column gap align-center  contSection">
-                <!-- Partie droite texte -->
-                <div class="large-12 flex gap-12 test">
-                    <h3 class="divh2">Moqueca</h3>
-                    <div class="flex ">
-                        <p class="textP">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, deleniti minus laborum
-                            sequi
-                            cumque nihil necessitatibus. Quae omnis dicta doloremque soluta sapiente voluptate,
-                            explicabo
-                            quas, recusandae veritatis perspiciatis, hic ut.
+            <div class="card">
+                <img src="assets/IMG 2.jpg" alt="Moqueca" />
+                <div class="card-content">
+                    <h3>Moqueca</h3>
+                    <p>Poisson au lait de coco, tomates, oignons, coriandre.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/IMG3.jpg" alt="Churrasco" />
+                <div class="card-content">
+                    <h3>Churrasco</h3>
+                    <p>Viandes grillées, farofa, vinaigrette.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/IMG4.jpg" alt="Acarajé" />
+                <div class="card-content">
+                    <h3>Acarajé</h3>
+                    <p>Beignets de haricots, crevettes, sauce vatapá.</p>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <!-- Section Services -->
+        <section class="services-section">
+            <div class="services-wrapper">
+                <h2 class="section-title">✨ Nos Services</h2>
+                <div class="services-grid">
+
+                    <div class="service-card">
+                        <div class="service-icon">🎉</div>
+                        <h3 class="service-title">Événements Culturels</h3>
+                        <p class="service-description">
+                            Vibrez au rythme du Brésil avec nos événements culturels : musique live, danse, et
+                            dégustations typiques pour une immersion totale.
                         </p>
                     </div>
-                </div>
 
-                <!-- Partie gauche image -->
-                <img src="assets/img 1.jpg" alt="Image plats brésilien" class="large-12 image" />
+                    <div class="service-card">
+                        <div class="service-icon">🍳</div>
+                        <h3 class="service-title">Cours de Cuisine</h3>
+                        <p class="service-description">
+                            Apprenez les secrets de la gastronomie brésilienne grâce à nos chefs passionnés. Techniques,
+                            saveurs et convivialité au menu.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">🏠</div>
+                        <h3 class="service-title">Privatisation d'Espace</h3>
+                        <p class="service-description">
+                            Un lieu unique pour vos événements privés. Offrez à vos invités une ambiance brésilienne
+                            inoubliable, quelle que soit l’occasion.
+                        </p>
+                    </div>
+
+                </div>
             </div>
         </section>
 
-        <!--section Services-->
-        <section>
-            <h2>Nos Services</h2>
-
-            <div class="services-container">
-
-                <div class="service">
-                    <h3>Événements Culturels</h3>
-                    <p>
-                        Participez à nos événements culturels pour vivre l'ambiance du Brésil.
-                        Musique live, danse, et dégustation de plats authentiques pour une expérience immersive.
-                    </p>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="assets/ogo-bresilien-1.png" alt="Logo">
                 </div>
 
-                <div class="service">
-                    <h3>Cours de Cuisine</h3>
-                    <p>
-                        Apprenez à cuisiner les plats brésiliens avec nos cours de cuisine.
-                        Nos chefs vous guideront à travers les techniques et les saveurs de la cuisine brésilienne.
-                    </p>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Reservation</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-contact">
+                    <p><strong>Address:</strong> 14 Rue du Port du Temple, 42 Saint Etienne</p>
+                    <p><strong>Email:</strong> contact@Tudo de Bom.fr</p>
+                    <p><strong>Phone:</strong> +33 4 78 42 36</p>
                 </div>
 
-                <div class="service">
-                    <h3>Privatisation d'Espace</h3>
-                    <p>
-                        Privatisez un espace pour vos événements spéciaux.
-                        Anniversaires, réunions d'affaires ou célébrations,
-                        nous créons une atmosphère brésilienne pour rendre votre occasion mémorable.
-                    </p>
+                <div class="footer-social">
+                    <a href="" target="_blank">Facebook</a>
+                    <a href="" target="_blank">Instagram</a>
                 </div>
-
             </div>
-        </section>
-
-
-
-
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tudo de Bom Brasil. All rights reserved.</p>
+            </div>
+        </footer>
 
     </main>
-
 </body>
 
 </html>
