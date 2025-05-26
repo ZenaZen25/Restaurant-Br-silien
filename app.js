@@ -1,10 +1,11 @@
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
-       
+
         afficherRestaurant(data.plats);
-       afficherServices (data.services)
-      afficherTemoignages(data.temoignages)
+        afficherServices(data.services)
+        afficherTemoignages(data.temoignages)
+        afficherPromesses(data.promessesClient);
     });
 
 // Rôle : afficher les cartes sur la page.
@@ -18,15 +19,16 @@ function afficherRestaurant(tableauRecette) {
         let titre = recette.nom;
         let description = recette.desc;
         let srcImg = recette.imageurl;
-    
-        document.getElementById("cardContainer").innerHTML +=`
+
+        document.getElementById("cardContainer").innerHTML += `
   <div class="plate">
                     <img src="${srcImg}" alt="Feijoada" />
                     <div class="plate-description">
                         <h3 class="S">${titre}</h3>
                         <p>${description}</p>
                     </div>
-                </div>`})};
+                </div>`})
+};
 
 
 
@@ -58,10 +60,10 @@ function afficherTemoignages(tableauTemoignages) {
         let prenom = temoin.prenom;
         let typeExperience = temoin.typeExperience;
         let commentaire = temoin.commentaire;
-        let note = "★".repeat(temoin.note); // Affichage visuel des étoiles
+        let note = "★".repeat(temoin.note) + "☆".repeat(5 - temoin.note); 
 
         document.getElementById("temoignageContainer").innerHTML += `
-        <div class="temoignage">
+    
                     <div class="testCard">
                         <h3>${prenom}</h3>
                         <h4>${typeExperience}</h4>
@@ -70,3 +72,4 @@ function afficherTemoignages(tableauTemoignages) {
                     </div> `;
     });
 }
+

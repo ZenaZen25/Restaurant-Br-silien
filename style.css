@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* ← empêche le scroll horizontal */
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
 }
 
 /* Variables */
@@ -35,7 +35,7 @@ h1 {
 }
 
 h2 {
-    font-size: 32px; 
+    font-size: 32px;
     color: #33664F;
     font-weight: 600;
     margin-bottom: 25px;
@@ -44,7 +44,7 @@ h2 {
 }
 
 h3 {
-    font-size: 24px; 
+    font-size: 24px;
     color: orangered;
     font-weight: 500;
 }
@@ -102,7 +102,7 @@ a:hover {
 
 header {
     background-color: #fdf3dae6;
-    padding: 10px 0;
+    padding: 5px 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -111,8 +111,8 @@ header {
 
 /* Logo */
 .logo {
-    width: 150px;
-    border-radius: 30px; 
+    width: 50px;
+    border-radius: 30px;
 }
 
 /* Menu */
@@ -124,6 +124,7 @@ header {
     list-style: none;
     display: flex;
     gap: 36px;
+    margin: 0;
 }
 
 .menu ul li a:hover {
@@ -131,7 +132,7 @@ header {
 }
 
 .menu a {
-    font-size: 19.2px; 
+    font-size: 13px;
     font-weight: 500;
 }
 
@@ -162,23 +163,28 @@ header {
 }
 
 .divHero {
+    width: 35%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 32px; 
+    padding: 32px;
     border-radius: 30px;
-    max-width: 90%;
+
+}
+
+.divHero>img {
+    width: 50%;
 }
 
 .divHero h1 {
-    font-size: 64px; 
+    font-size: 30px;
 }
 
 .divHero p {
-    font-size: 24px; 
+    font-size: 15px;
     color: var(--black);
 }
 
@@ -188,12 +194,17 @@ header {
     padding: 32px;
     border-radius: 12px;
     margin: 32px auto;
-    max-width: 1200px; 
-    width: 90%;        
- max-width: 1200px;
- font-size: 24px; 
+    max-width: 1200px;
+    width: 90%;
+    max-width: 1200px;
+    font-size: 24px;
 
 }
+
+
+
+
+
 
 /* Section Plats */
 .plates-section {
@@ -202,14 +213,15 @@ header {
 
 .plate {
     display: flex;
-    background-color:#fdf3dae6;
+    background-color: #fdf3dae6;
     color: #147a59;
     border-radius: 20px;
-    
+
     margin: 20px auto;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     align-items: center;
-    max-width: 1200px;
+    max-width: 1000px;
+    width: 70%;
 }
 
 .plate.reverse {
@@ -217,7 +229,7 @@ header {
 }
 
 .plate img {
-    width: 50%;
+    width: 30%;
     height: auto;
     object-fit: cover;
     display: block;
@@ -226,7 +238,7 @@ header {
 
 .plate-description {
     width: 50%;
-    padding: 32px; 
+    padding: 32px;
     text-align: center;
 }
 
@@ -237,149 +249,147 @@ header {
 }
 
 h3.S {
-    font-size: 24px; 
+    font-size: 24px;
     color: #147a59;
     font-weight: 500;
 }
 
-#cardContainer>div:nth-child(2n){
+#cardContainer>div:nth-child(2n) {
     flex-flow: row-reverse;
 }
 
 /* Section Services */
 .services {
-  background: linear-gradient(to bottom, #fffbf0, #fff5e1);
-  padding: 80px 0;
-  font-family: sans-serif;
+    background: linear-gradient(to bottom, #fffbf0, #fff5e1);
+    padding: 80px 0;
+    font-family: sans-serif;
 }
 
 .servicesCont {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .services-titre {
-  font-size: 40px;
-  color: #147a59;
-  margin-bottom: 50px;
-  font-weight: bold;
+    font-size: 40px;
+    color: #147a59;
+    margin-bottom: 50px;
+    font-weight: bold;
 }
 
 .serviceDiv {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
 .service-card {
-  background-color: #ffffff;
-  border-radius: 20px;
-  padding: 30px 20px;
-  width: 300px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  border-top: 6px solid #FFBF00;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px 20px;
+    width: 23%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-top: 6px solid #FFBF00;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
 .service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .icon {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
 }
 
 .service-card h3 {
-  font-size: 24px;
-  color: #f56342;
-  margin-bottom: 10px;
+    font-size: 24px;
+    color: #f56342;
+    margin-bottom: 10px;
 }
 
 .service-card p {
-  font-size: 18px;
-  color: #33664F;
+    font-size: 14px;
+    color: #33664F;
 }
 
 
 
 /* Section test */
 .testimonials {
-  width: 100%;
-  padding: 40px 0;
-  text-align: center;
-  font-family: sans-serif;
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    font-family: sans-serif;
 }
 
 /* Container div */
 .temoignageCont {
-  width: 80%;
-  margin: 0 auto 40px auto;
-  padding: 0 20px;
+    width: 100%;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
 }
 
 /* Titre */
 .testimonials h2 {
-  font-size: 40px;
-  margin-bottom: 40px;
+    font-size: 40px;
+    margin-bottom: 40px;
 }
 
 /* Grille des cartes */
 .testContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  justify-items: center;
-  width: 100%;
-  margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
 }
 
 /* Carte */
 .testCard {
-  background-color: #FD8D5D;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  padding: 24px;
-  max-width: 320px;
-  width: 100%; 
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #FD8D5D;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    width: 23%;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .testCard:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .testCard h3 {
-  font-size: 24px;
-  color: #fbff2b;
-  margin-bottom: 8px;
-  font-weight: 600;
+    font-size: 24px;
+    color: #fbff2b;
+    margin-bottom: 8px;
+    font-weight: 600;
 }
 
 .testCard h4 {
-  font-size: 20px;
-  color: #33664F;
-  font-style: italic;
-  font-weight: 400;
+    font-size: 20px;
+    color: #33664F;
+    font-style: italic;
+    font-weight: 400;
 }
 
 .testCard p {
-  font-size: 16px;
-  color: #ffffff;
-  margin: 16px 0;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 16px 0;
 }
 
 .testCard .rating {
-  font-size: 22px;
-  color: #33664F;
-  letter-spacing: 2px;
+    font-size: 22px;
+    color: #33664F;
+    letter-spacing: 2px;
 }
 
 /* Pied de page */
@@ -426,7 +436,7 @@ h3.S {
 .footer-bottom {
     text-align: center;
     margin-top: 20px;
-    font-size: 16px; 
+    font-size: 16px;
     color: #000000;
 }
 
@@ -441,7 +451,7 @@ h3.S {
         left: 0;
         width: 100%;
         background-color: rgba(253, 243, 218, 0.9);
-        padding: 16px; 
+        padding: 16px;
     }
 
     .menu ul {
@@ -462,16 +472,15 @@ h3.S {
     }
 
     .divHero {
-        padding: 16px; 
-        max-width: 95%;
+        padding: 16px;
     }
 
     .divHero h1 {
-        font-size: 32px;
+        font-size: 22px;
     }
 
     .divHero p {
-        font-size: 19.2px; 
+        font-size: 13px;
     }
 
     .plate {
