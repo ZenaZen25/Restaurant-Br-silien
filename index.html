@@ -15,7 +15,7 @@
     <!-- Header -->
     <header class="hRadius">
         <nav class="menu container">
-            <ul class="flex justify-between align-center">
+            <ul class="flex justify-between align-center color: var(--yellow);">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#">Réserver</a></li>
@@ -37,6 +37,11 @@
             <div class="divHero">
                 <!-- Image ou contenu additionnel ici si nécessaire -->
             </div>
+                <div class=" w50 divHero">
+                <img src="assets/ogo-bresilien-1.png" alt="">
+                <h1 class="white">Restaurant Brésilien</h1>
+                <P class="white">Dégustez nos saveurs uniques</P>
+            </div>
         </section>
 
         <!-- Histoire -->
@@ -50,79 +55,90 @@
             </p>
         </section>
         <!--Section plats-->
-        <section class="cards-container">
-            <div class="card">
-                <img src="assets/img 1.jpg" alt="Feijoada" />
-                <div class="card-content">
-                    <h3>Feijoada</h3>
-                    <p>Haricots noirs & viandes variées. Plat emblématique brésilien.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="assets/IMG 2.jpg" alt="Moqueca" />
-                <div class="card-content">
-                    <h3>Moqueca</h3>
-                    <p>Poisson au lait de coco, tomates, oignons, coriandre.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="assets/IMG3.jpg" alt="Churrasco" />
-                <div class="card-content">
-                    <h3>Churrasco</h3>
-                    <p>Viandes grillées, farofa, vinaigrette.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="assets/IMG4.jpg" alt="Acarajé" />
-                <div class="card-content">
-                    <h3>Acarajé</h3>
-                    <p>Beignets de haricots, crevettes, sauce vatapá.</p>
-                </div>
-            </div>
-
-
-
-        </section>
-
-        <!-- Section Services -->
-        <section class="services-section">
-            <div class="services-wrapper">
-                <h2 class="section-title">✨ Nos Services</h2>
-                <div class="services-grid">
-
-                    <div class="service-card">
-                        <div class="service-icon">🎉</div>
-                        <h3 class="service-title">Événements Culturels</h3>
-                        <p class="service-description">
-                            Vibrez au rythme du Brésil avec nos événements culturels : musique live, danse, et
-                            dégustations typiques pour une immersion totale.
-                        </p>
+        <section class="plates-section">
+            <div class="flex reverse">
+                <div class="plate">
+                    <img src="assets/img 1.jpg" alt="Feijoada" />
+                    <div class="plate-description">
+                        <h3 class="S">Feijoada</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem doloribus tempore quasi quisquam provident porro tempora voluptates impedit assumenda incidunt, molestias dolorum reiciendis nemo? Odit non impedit quisquam deserunt veniam?</p>
                     </div>
-
-                    <div class="service-card">
-                        <div class="service-icon">🍳</div>
-                        <h3 class="service-title">Cours de Cuisine</h3>
-                        <p class="service-description">
-                            Apprenez les secrets de la gastronomie brésilienne grâce à nos chefs passionnés. Techniques,
-                            saveurs et convivialité au menu.
-                        </p>
+                </div>
+                    <div class="plate">
+                    <img src="assets/IMG3.jpg" alt="Churrasco" />
+                    <div class="plate-description">
+                        <h3 class="S">Churrasco</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe alias ipsa molestiae facere assumenda voluptatum amet officiis dolorem commodi, sapiente explicabo quo quae ipsum consequatur qui? In dolores ea illo..</p>
                     </div>
+                </div>
 
-                    <div class="service-card">
-                        <div class="service-icon">🏠</div>
-                        <h3 class="service-title">Privatisation d'Espace</h3>
-                        <p class="service-description">
-                            Un lieu unique pour vos événements privés. Offrez à vos invités une ambiance brésilienne
-                            inoubliable, quelle que soit l’occasion.
-                        </p>
+                <div class="plate reverse">
+                    <img src="assets/IMG 2.jpg" alt="Moqueca" />
+                    <div class="plate-description">
+                        <h3 class="S">Moqueca</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis atque repellat placeat nam fuga soluta adipisci provident aut, ex harum. Magni fugiat cumque non exercitationem excepturi temporibus ex quibusdam modi.</p>
                     </div>
+                </div>
 
+            
+                <div class="plate reverse">
+                    <img src="assets/IMG4.jpg" alt="Moqueca" />
+                    <div class="plate-description">
+                        <h3 class="S">Moqueca</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fuga nisi alias odio laudantium, neque vitae eveniet reiciendis culpa, minima qui vel dolore obcaecati ullam blanditiis nobis at est? Distinctio!</p>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- nos services -->
+<section class="services">
+    <div class="servicesCont">
+        <h2 class="services-titre">🌴 Nos Services Brésiliens 🌴</h2>
+        <div class="serviceDiv">
+            <div class="service-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/4479/4479471.png" alt="Événements" class="icon">
+                <h3>Événements Culturels</h3>
+                <p>Vivez le Brésil avec nos soirées dansantes, concerts live et dégustations typiques. Ambiance garantie !</p>
+            </div>
+            <div class="service-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/857/857681.png" alt="Cuisine" class="icon">
+                <h3>Cours de Cuisine</h3>
+                <p>Initiez-vous à la cuisine brésilienne avec nos chefs passionnés. Saveurs, techniques et plaisir au menu.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Privatisation" class="icon">
+                <h3>Privatisation</h3>
+                <p>Faites de votre événement un voyage au Brésil : anniversaires, pro ou privé, dans une ambiance tropicale.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="testimonials">
+        <h2>Témoignages de nos clients</h2>
+        <div class="testContainer">
+            <div class="testCard">
+                <h3>Sophie</h3>
+                <h4>Moqueca de Peixe</h4>
+                <p>La moqueca de peixe chez Tudo de Bom est un véritable délice. Les saveurs sont authentiques, et le poisson est toujours frais. Une expérience culinaire à ne pas manquer !</p>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="testCard">
+                <h3>Lucas</h3>
+                <h4>Cours de Cuisine</h4>
+                <p>Les cours de cuisine chez Tudo de Bom sont une expérience éducative et amusante. J'ai appris à cuisiner mes plats brésiliens préférés. Une façon interactive de découvrir la culture culinaire.</p>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="testCard">
+                <h3>Camila</h3>
+                <h4>Événement Culturel</h4>
+                <p>Les événements culturels chez Tudo de Bom sont toujours animés et festifs. La musique, la danse, et la nourriture créent une ambiance brésilienne authentique. C'est comme un voyage au Brésil à chaque visite !</p>
+                <div class="rating">★★★★</div>
+            </div>
+        </div>
+    </section>
 
         <footer class="footer">
             <div class="footer-container">
@@ -145,7 +161,7 @@
                     <p><strong>Phone:</strong> +33 4 78 42 36</p>
                 </div>
 
-                <div class="footer-social">
+                <div class="">
                     <a href="" target="_blank">Facebook</a>
                     <a href="" target="_blank">Instagram</a>
                 </div>
